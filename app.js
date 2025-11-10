@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Reklam MP4 URL'in
-const AD_VIDEO_URL = "https://ads.amfipark.com/bir.mp4";
+const AD_VIDEO_URL = "https://player.mediadelivery.net/embed/534210/dee86846-9223-4695-9ba5-42bea20c47db";
 
 // VAST XML üretimi
 app.get("/vast.xml", (req, res) => {

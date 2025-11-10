@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bunny + VAST Reklam Test</title>
+
+  <!-- Video.js -->
+  <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+  <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+
+  <!-- VAST plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.9.0/videojs-contrib-ads.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-vast-vpaid/2.2.1/videojs.vast.vpaid.min.js"></script>
+
+  <style>
+    body { background:#000; }
+    .video-js { width: 800px; height: 450px; margin:auto; }
+  </style>
+</head>
+<body>
+
+  <video id="myPlayer" class="video-js vjs-default-skin" controls preload="auto">
+    <source src="https://player.mediadelivery.net/embed/534210/e6cb8073-0747-4ce1-b10b-afd4c325b19c" type="application/x-mpegURL">
+  </video>
+
+  <script>
+    const player = videojs('myPlayer');
+
+    player.ready(function() {
+      player.vastClient({
+        adTagUrl: 'YOUR_VAST_URL.xml',
+        playAdAlways: true,
+        adsEnabled: true
+      });
+    });
+  </script>
+
+</body>
+</html>
