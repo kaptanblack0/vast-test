@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 // Doğrudan MP4 video URL'i kullanın (embed URL değil!)
 // Bunny Stream'den videonun doğrudan MP4 linkini alın
-const AD_VIDEO_URL = "https://vz-7335a66b-be3.b-cdn.net/dee86846-9223-4695-9ba5-42bea20c47db/playlist.m3u8";
+const AD_VIDEO_URL = "https://ads.amfipark.com/bir.mp4";
 
 // CORS ayarları (reklam player'lar için gerekli)
 app.use((req, res, next) => {
