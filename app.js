@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Reklam MP4 URL'in
 const AD_VIDEO_URL = "https://ads.amfipark.com/bir.mp4";
@@ -19,7 +19,7 @@ app.get("/vast.xml", (req, res) => {
         <Creatives>
           <Creative>
             <Linear>
-              <Duration>00:00:10</Duration>
+              <Duration>00:00:04</Duration>
               <MediaFiles>
                 <MediaFile
                   delivery="progressive"
