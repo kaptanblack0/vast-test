@@ -36,5 +36,5 @@ app.get("/vast.xml", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`VAST çalışıyor → http://localhost:${PORT}/vast.xml`);
+  console.log(`VAST saasçalışıyor → http://localhost:${PORT}/vast.xml`);
 });
